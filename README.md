@@ -42,14 +42,14 @@ A small-scale example project showcasing a **Microservices Architecture** with m
 
 ### Run the Application
 
-    ```bash
+```bash
     
     git clone [https://github.com/your-username/realtime-collaborative-notes.git](https://github.com/your-username/realtime-collaborative-notes.git)
 
     cd realtime-collaborative-notes
     
     docker-compose up --build
-    ```
+```
 
 ---
 

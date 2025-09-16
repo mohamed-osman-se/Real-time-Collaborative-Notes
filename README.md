@@ -46,7 +46,7 @@ A small-scale example project showcasing a **Microservices Architecture** with m
     
     git clone https://github.com/mohamed-osman-se/Real-time-Collaborative-Notes.git
 
-    cd realtime-collaborative-notes
+    cd Real-time-Collaborative-Notes/
     
     docker compose up --build
 ```

@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  graphql:
+    build:
+      context: ./GraphQLGateway
+      dockerfile: Dockerfile
+    container_name: graphql_service
+    ports:
+      - "5000:80" 
+    depends_on:
+      - grpc
+      - mongo
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  grpc:
+    build:
+      context: ./Services.Grpc
+      dockerfile: Dockerfile
+    container_name: grpc_service
+    ports:
+      - "6000:80" 
+    depends_on:
+      - mongo
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  mongo:
+    image: mongo:6.0
+    container_name: mongo_db
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root123
+    volumes:
+      - mongo_data:/data/db
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+
+volumes:
+  mongo_data:

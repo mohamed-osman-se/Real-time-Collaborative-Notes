@@ -1,0 +1,26 @@
+syntax ="proto3";
+option csharp_namespace = "GrpcNote.Protos";
+
+package noteservice;
+
+
+
+
+message NoteDTO {
+
+    string Title = 1;
+    string Content = 2;
+  }
+
+message Void{}
+
+message NotesDTO{repeated NoteDTO NotesDto=1;}
+
+
+service NoteService{
+    rpc CreateNote(NoteDTO) returns(Void);
+    rpc GetAllNotes(Void) returns(NotesDTO);
+
+}
+
+

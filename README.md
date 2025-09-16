@@ -29,7 +29,7 @@ A small-scale example project showcasing a **Microservices Architecture** with m
 
 ## 🎬 Video Demo
 
-👉 [**Watch the full demo on YouTube**](https://your-youtube-link-here)
+👉 [**Watch the full demo on YouTube**](https://youtu.be/z3lAb7-PQa8)
 
 ---
 

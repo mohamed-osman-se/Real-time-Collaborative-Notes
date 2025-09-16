@@ -55,7 +55,7 @@ A small-scale example project showcasing a **Microservices Architecture** with m
 
 ## 🌐 Access Points
 
--   **GraphQL Playground**: `http://localhost:5236/graphql`
+-   **GraphQL Playground**: `http://localhost:5000/graphql`
 
 ---
 

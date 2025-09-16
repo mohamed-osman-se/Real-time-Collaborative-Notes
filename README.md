@@ -42,18 +42,12 @@ A small-scale example project showcasing a **Microservices Architecture** with m
 
 ### Run the Application
 
-1.  Clone the repository:
     ```bash
+    
     git clone [https://github.com/your-username/realtime-collaborative-notes.git](https://github.com/your-username/realtime-collaborative-notes.git)
-    ```
 
-2.  Navigate to the project directory:
-    ```bash
     cd realtime-collaborative-notes
-    ```
-
-3.  Build and run the containers:
-    ```bash
+    
     docker-compose up --build
     ```
 

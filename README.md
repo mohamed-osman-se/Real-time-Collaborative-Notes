@@ -76,6 +76,7 @@ query {
 ### mutation
 
 ```graphql
+# Add first note
 mutation {
   addNote(note: {
     title: "First Note"
@@ -85,11 +86,41 @@ mutation {
   }
 }
 
-
+# Add reminder note
 mutation {
   addNote(note: {
     title: "Reminder"
     content: "Don’t forget to finish the SyncNotes project today!"
+  }) {
+    calculateSize
+  }
+}
+
+# Add meeting note
+mutation {
+  addNote(note: {
+    title: "Team Meeting"
+    content: "Meeting scheduled for tomorrow at 10 AM. Prepare the project updates."
+  }) {
+    calculateSize
+  }
+}
+
+# Add learning note
+mutation {
+  addNote(note: {
+    title: "Learning GraphQL"
+    content: "Practice writing queries and mutations daily to get fluent."
+  }) {
+    calculateSize
+  }
+}
+
+# Add motivational note
+mutation {
+  addNote(note: {
+    title: "Motivation"
+    content: "Stay consistent, small progress every day leads to big success."
   }) {
     calculateSize
   }
@@ -102,8 +133,7 @@ mutation {
 
 ```graphql
 subscription {
-  noteAdded {
-    id
+  onNoteAdded {
     title
     content
   }

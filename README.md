@@ -1,6 +1,6 @@
 # 📝 Real-time Collaborative Notes
 
-A small-scale example project showcasing a **Microservices Architecture** with modern backend technologies. This application demonstrates how to design and build distributed systems using **gRPC**, **GraphQL**, **MongoDB**, and **WebSockets** — all packaged in a one-click Docker Compose setup.
+A small-scale example project showcasing a **Microservices Architecture** with modern backend technologies. This application demonstrates how to design and build simple distributed systems using **gRPC**, **GraphQL**, **MongoDB**, and **WebSockets** — all packaged in a one-click Docker Compose setup.
 
 ---
 

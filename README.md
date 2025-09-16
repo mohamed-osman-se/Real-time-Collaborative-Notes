@@ -48,7 +48,7 @@ A small-scale example project showcasing a **Microservices Architecture** with m
 
     cd realtime-collaborative-notes
     
-    docker-compose up --build
+    docker compose up --build
 ```
 
 ---

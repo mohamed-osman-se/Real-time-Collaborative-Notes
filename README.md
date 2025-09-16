@@ -8,7 +8,7 @@ A small-scale example project showcasing a **Microservices Architecture** with m
 
 -   **Real-time Collaboration**: Notes update instantly across multiple clients using GraphQL Subscriptions over WebSockets.
 -   **Microservices Architecture**:
-    -   **gRPC Service**: Handles core CRUD (Create, Read, Update, Delete) operations on notes.
+    -   **gRPC Service**: Handles core Two operations **(GET & ADD)** on notes.
     -   **GraphQL Gateway**: Provides a unified API layer with Queries, Mutations, and Subscriptions.
 -   **Strongly-Typed Contracts**: Service definitions are defined using **Protocol Buffers (protobuf)** for efficient and type-safe communication.
 -   **Flexible Data Storage**: Uses **MongoDB** (NoSQL) for schema-less data persistence.

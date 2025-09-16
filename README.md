@@ -44,7 +44,7 @@ A small-scale example project showcasing a **Microservices Architecture** with m
 
 ```bash
     
-    git clone [https://github.com/your-username/realtime-collaborative-notes.git](https://github.com/your-username/realtime-collaborative-notes.git)
+    git clone https://github.com/mohamed-osman-se/Real-time-Collaborative-Notes.git
 
     cd realtime-collaborative-notes
     

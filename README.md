@@ -1,54 +1,69 @@
-# Real-time Collaborative Notes 
+# 📝 Real-time Collaborative Notes
 
-A **small-scale example project** showcasing **Microservices Architecture** with modern backend technologies.  
-This application demonstrates how to design and build distributed systems using **gRPC with Protobuf**, **GraphQL as a gateway**, **MongoDB for persistence**, and **WebSockets for real-time collaboration** — all packaged in a **Docker Compose one-click setup**.
+A small-scale example project showcasing a **Microservices Architecture** with modern backend technologies. This application demonstrates how to design and build distributed systems using **gRPC**, **GraphQL**, **MongoDB**, and **WebSockets** — all packaged in a one-click Docker Compose setup.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- **Real-time Collaboration** – Notes update instantly across multiple clients using **GraphQL Subscriptions + WebSockets**.  
-- **Microservices-based Design** –  
-  - **gRPC Service**: Handles CRUD operations on notes.  
-  - **GraphQL Gateway**: Standard API layer with Queries, Mutations, and Subscriptions.  
-- **Protobuf Contracts** – Service definitions are defined using **Protocol Buffers (protobuf)** for efficient and type-safe communication.  
-- **Database** – MongoDB (NoSQL) for flexible, schema-less data storage.  
-- **Containerized Deployment** – Run the entire system with a single `docker-compose up --build`.  
+-   **Real-time Collaboration**: Notes update instantly across multiple clients using GraphQL Subscriptions over WebSockets.
+-   **Microservices Architecture**:
+    -   **gRPC Service**: Handles core CRUD (Create, Read, Update, Delete) operations on notes.
+    -   **GraphQL Gateway**: Provides a unified API layer with Queries, Mutations, and Subscriptions.
+-   **Strongly-Typed Contracts**: Service definitions are defined using **Protocol Buffers (protobuf)** for efficient and type-safe communication.
+-   **Flexible Data Storage**: Uses **MongoDB** (NoSQL) for schema-less data persistence.
+-   **Containerized Deployment**: Run the entire system with a single command: `docker-compose up --build`.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Backend Services**:  
-  - ASP.NET Core (.NET 9)  
-  - gRPC 
-  - GraphQL 
-- **Database**: MongoDB  
-- **Real-time Layer**: WebSockets  
-- **Infrastructure**: Docker & Docker Compose  
+| Category        | Technology                                     |
+| --------------- | ---------------------------------------------- |
+| **Backend** | `ASP.NET Core (.NET 9)`, `gRPC`, `GraphQL`       |
+| **Database** | `MongoDB`                                      |
+| **Real-time** | `WebSockets`                                   |
+| **DevOps** | `Docker`, `Docker Compose`                     |
 
 ---
 
-### 🎬 **Video Demo**
+## 🎬 Video Demo
 
 👉 [**Watch the full demo on YouTube**](https://your-youtube-link-here)
 
-## ⚡ Getting Started
+---
 
-### 1. Prerequisites
-- [Docker](https://www.docker.com/) & Docker Compose  
-- [.NET 9 SDK](https://dotnet.microsoft.com/) (optional for local development)  
+## 🚀 Getting Started
 
-### 2. Run with Docker
-```bash
-git clone https://github.com/your-username/realtime-collaborative-notes.git
-cd realtime-collaborative-notes
-docker-compose up --build
-```
+### Prerequisites
 
-## Access Services
+-   [Docker & Docker Compose](https://www.docker.com/products/docker-desktop/)
+-   [.NET 9 SDK](https://dotnet.microsoft.com/) (Optional, for local development)
 
--  GraphQL Playground: http://localhost:5236/graphql
+### Run the Application
+
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/your-username/realtime-collaborative-notes.git](https://github.com/your-username/realtime-collaborative-notes.git)
+    ```
+
+2.  Navigate to the project directory:
+    ```bash
+    cd realtime-collaborative-notes
+    ```
+
+3.  Build and run the containers:
+    ```bash
+    docker-compose up --build
+    ```
+
+---
+
+## 🌐 Access Points
+
+-   **GraphQL Playground**: `http://localhost:5236/graphql`
+
+---
 
 ##  Example Operations
 
@@ -68,12 +83,24 @@ query {
 
 ```graphql
 mutation {
-  addNote(note: { title: "New Note", content: "Hello World!" }) {
-    id
-    title
-    content
+  addNote(note: {
+    title: "First Note"
+    content: "This is my first note stored via GraphQL mutation."
+  }) {
+    calculateSize
   }
 }
+
+
+mutation {
+  addNote(note: {
+    title: "Reminder"
+    content: "Don’t forget to finish the SyncNotes project today!"
+  }) {
+    calculateSize
+  }
+}
+
 
 ```
 

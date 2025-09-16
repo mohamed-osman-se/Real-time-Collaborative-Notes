@@ -21,17 +21,17 @@ This application demonstrates how to design and build distributed systems using 
 
 - **Backend Services**:  
   - ASP.NET Core (.NET 9)  
-  - gRPC + Protobuf  
-  - GraphQL (with Subscriptions)  
+  - gRPC 
+  - GraphQL 
 - **Database**: MongoDB  
 - **Real-time Layer**: WebSockets  
 - **Infrastructure**: Docker & Docker Compose  
 
 ---
 
-Video Demo
+### 🎬 **Video Demo**
 
-👉 Watch the demo here put her youtube link i will modyfi it later
+👉 [**Watch the full demo on YouTube**](https://your-youtube-link-here)
 
 ## ⚡ Getting Started
 
@@ -50,7 +50,7 @@ docker-compose up --build
 
 -  GraphQL Playground: http://localhost:5236/graphql
 
-## 🔍 Example Operations
+##  Example Operations
 
 ### Query
 
